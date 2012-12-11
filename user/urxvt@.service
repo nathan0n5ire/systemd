@@ -1,0 +1,6 @@
+[Unit]
+Description=Urxvt %I
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/urxvt

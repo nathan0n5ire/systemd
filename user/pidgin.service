@@ -1,0 +1,7 @@
+[Unit]
+Description=Pidgin
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/pidgin
+KillMode=process

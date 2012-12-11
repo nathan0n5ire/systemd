@@ -1,0 +1,10 @@
+[Unit]
+Description=Lock X screen using slock
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/slock
+
+[Install]
+WantedBy=sleep.target
+WantedBy=default.target

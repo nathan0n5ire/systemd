@@ -1,0 +1,7 @@
+[Unit]
+Description=Quodlibet
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/quodlibet
+KillMode=process

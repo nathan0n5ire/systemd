@@ -1,0 +1,7 @@
+[Unit]
+Description=Anki
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/anki
+KillMode=process

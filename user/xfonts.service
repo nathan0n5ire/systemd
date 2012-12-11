@@ -1,0 +1,11 @@
+[Unit]
+Description=Adds Terminus to Xorg Font Path
+After=xorg.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xset +fp /usr/share/fonts/local
+ExecStart=/usr/bin/xset fp rehash
+
+[Install]
+WantedBy=default.target

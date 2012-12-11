@@ -1,0 +1,7 @@
+[Unit]
+Description=Transmission
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/transmission-gtk
+KillMode=process

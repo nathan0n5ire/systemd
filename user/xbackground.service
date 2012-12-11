@@ -1,0 +1,10 @@
+[Unit]
+Description=Sets the background color
+After=xorg.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xsetroot -solid '#002b36'
+
+[Install]
+WantedBy=default.target

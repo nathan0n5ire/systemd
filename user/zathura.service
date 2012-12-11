@@ -1,0 +1,7 @@
+[Unit]
+Description=Zathura
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/zathura
+KillMode=process

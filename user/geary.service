@@ -1,0 +1,7 @@
+[Unit]
+Description=Geary Mail Client
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/geary
+KillMode=process

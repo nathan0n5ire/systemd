@@ -1,0 +1,7 @@
+[Unit]
+Description=Conkeror Web Browser
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/firefox --app /home/nathan/source/conkeror/application.ini
+KillMode=process

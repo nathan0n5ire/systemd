@@ -1,0 +1,9 @@
+[Unit]
+Description=Application "%i"
+After=xorg.target
+IgnoreOnIsolate=yes
+
+[Service]
+ExecStart=/usr/bin/env %i
+
+KillMode=process

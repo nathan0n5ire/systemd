@@ -1,0 +1,9 @@
+[Unit]
+Description=Bitcoin client
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/bitcoin-qt -min -splash 0
+
+[Install]
+WantedBy=default.target

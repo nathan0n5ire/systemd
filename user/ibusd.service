@@ -1,0 +1,12 @@
+[Unit]
+Description=Ibus Daemon
+After=xorg.target
+After=xkeyboard.service	
+Requires=dbus.socket
+IgnoreOnIsolate=yes
+
+[Service]
+ExecStart=/usr/bin/ibus-daemon -x
+
+[Install]
+WantedBy=default.target

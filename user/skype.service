@@ -1,0 +1,7 @@
+[Unit]
+Description=Skpe	
+After=xorg.target
+
+[Service]
+ExecStart=/opt/bin/skype
+KillMode=process

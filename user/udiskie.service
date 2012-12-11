@@ -1,0 +1,9 @@
+[Unit]
+Description=Udiskie automounter
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/udiskie
+
+[Install]
+WantedBy=default.target

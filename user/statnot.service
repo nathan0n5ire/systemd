@@ -1,0 +1,9 @@
+[Unit]
+Description=Statnot
+After=xorg.target
+
+[Service]
+ExecStart=/home/nathan/bin/statnot
+
+[Install]
+WantedBy=default.target

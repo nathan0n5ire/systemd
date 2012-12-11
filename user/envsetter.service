@@ -1,0 +1,11 @@
+[Unit]
+Description=Environment Setter
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl --user set-environment 'GTK_IM_MODULE=ibus'
+ExecStart=/usr/bin/systemctl --user set-environment 'XMODIFIERS=@im=ibus'
+ExecStart=/usr/bin/systemctl --user set-environment 'QT_IM_MODULE=ibus'
+ExecStart=/usr/bin/systemctl --user set-environment 'SHELL=/bin/zsh'
+[Install]
+WantedBy=default.target

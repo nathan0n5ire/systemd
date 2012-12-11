@@ -1,0 +1,11 @@
+[Unit]
+Description=PulesAudio Daemon
+After=xorg.target
+Requires=dbus.socket
+
+[Service]
+ExecStart=/usr/bin/pulseaudio
+ExecStop=/usr/bin/pulseaudio --kill
+
+[Install]
+WantedBy=sound.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=GPA
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/gpa
+KillMode=process

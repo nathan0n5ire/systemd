@@ -1,0 +1,11 @@
+[Unit]
+Description=Emacs Daemon
+After=xorg.target
+Requires=dbus.socket
+
+[Service]
+ExecStart=/usr/bin/emacs --daemon
+Type=forking
+
+[Install]
+WantedBy=default.target

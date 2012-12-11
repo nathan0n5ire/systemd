@@ -1,0 +1,7 @@
+[Unit]
+Description=Seahorse
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/seahorse
+KillMode=process

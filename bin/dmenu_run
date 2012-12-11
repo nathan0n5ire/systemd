@@ -1,0 +1,6 @@
+#!/bin/sh
+systemctl --user start $(
+	IFS=:
+	cd ~/.config/systemd/user
+	ls *.service | sed 's/.service//' | dmenu "$@"
+)

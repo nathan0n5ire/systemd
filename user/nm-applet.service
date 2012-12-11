@@ -1,0 +1,10 @@
+[Unit]
+Description=Network Manager Applet
+After=xorg.target
+Requires=dbus.socket
+
+[Service]
+ExecStart=/usr/bin/nm-applet
+
+[Install]
+WantedBy=default.target

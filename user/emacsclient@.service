@@ -1,0 +1,6 @@
+[Unit]
+Description=Emacsclient %I
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/emacsclient -c

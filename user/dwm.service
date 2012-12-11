@@ -1,0 +1,10 @@
+[Unit]
+Description=DWM Window Manager
+After=xfonts.service
+After=xorg.target
+
+[Service]
+ExecStart=/home/nathan/source/dwm-6.0/dwm
+
+[Install]
+WantedBy=default.target
