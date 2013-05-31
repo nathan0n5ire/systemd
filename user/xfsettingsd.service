@@ -1,0 +1,10 @@
+[Unit]
+Description=XFCE4 Settings Daemon
+After=xorg.target
+IgnoreOnIsolate=yes
+
+[Service]
+ExecStart=/usr/bin/xfsettingsd --no-daemon
+
+[Install]
+WantedBy=default.target
